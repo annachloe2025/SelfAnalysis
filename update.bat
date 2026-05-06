@@ -41,22 +41,24 @@ if errorlevel 1 (
 
 REM First try a normal push, fall back to --set-upstream on first push
 git push 2>nul
-if errorlevel 1 (
-    echo   No upstream set. Performing first push with --set-upstream origin main ...
-    git push --set-upstream origin main
-    if errorlevel 1 (
-        echo.
-        echo   ERROR: git push failed. Check the messages above.
-        echo   Common fixes:
-        echo     - Authenticate with GitHub (PAT or Git Credential Manager)
-        echo     - If remote already has commits:
-        echo         git pull origin main --allow-unrelated-histories
-        echo         then re-run this script.
-        echo.
-        pause
-        exit /b 1
-    )
-)
+if not errorlevel 1 goto :push_ok
+
+echo   No upstream set. Performing first push with --set-upstream origin main ...
+git push --set-upstream origin main
+if not errorlevel 1 goto :push_ok
+
+echo.
+echo   ERROR: git push failed. Check the messages above.
+echo   Common fixes:
+echo     - Authenticate with GitHub (PAT or Git Credential Manager)
+echo     - If remote already has commits:
+echo         git pull origin main --allow-unrelated-histories
+echo         then re-run this script.
+echo.
+pause
+exit /b 1
+
+:push_ok
 
 echo.
 echo [4/4] Deploying site to GitHub Pages ...
