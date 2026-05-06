@@ -101,6 +101,7 @@ use_directory_urls: true
 
 nav:
   - はじめに: index.md
+  - 私のスタンス: 私のスタンス.md
   - 1. 自己紹介:
       - 01_自己紹介/index.md
       - エレベーターピッチ: 01_自己紹介/01_エレベーターピッチ.md
