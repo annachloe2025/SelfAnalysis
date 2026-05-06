@@ -1,0 +1,33 @@
+# MkDocs build output
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Node / dev artifacts
+node_modules/
+
+# Local notes
+.tmp_*
+*.log
+
+# Private working folder (raw materials, drafts, chat logs)
+_archive/

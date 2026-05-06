@@ -1,0 +1,162 @@
+# ======================================================================
+# MkDocs 設定ファイル — SelfAnalysis（私という人間の自己分析）
+# ----------------------------------------------------------------------
+# ローカル確認 : python -m mkdocs serve     → http://127.0.0.1:8000
+# 本番ビルド   : python -m mkdocs build     → site/ フォルダに成果物
+# GitHub公開   : python -m mkdocs gh-deploy → GitHub Pages に直接公開
+# ======================================================================
+
+site_name: 私という人間
+site_description: 47歳で自分を理解した人間の自己分析・履歴・思考体系（Self Analysis）
+site_author: hoehoe
+site_url: https://annachloe2025.github.io/SelfAnalysis/
+
+repo_url: https://github.com/annachloe2025/SelfAnalysis
+repo_name: annachloe2025/SelfAnalysis
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: ja
+  favicon: assets/favicon.ico
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: ダークモードに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードに切り替え
+  font:
+    text: Noto Sans JP
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - ja
+        - en
+  - tags:
+      tags_file: tags.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+hooks:
+  - hooks/generate_archive.py
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/annachloe2025/SelfAnalysis
+
+copyright: "&copy; 2026 hoehoe"
+
+strict: false
+use_directory_urls: true
+
+nav:
+  - はじめに: index.md
+  - 1. 自己紹介:
+      - 01_自己紹介/index.md
+      - エレベーターピッチ: 01_自己紹介/01_エレベーターピッチ.md
+      - プロフィール（履歴書）: 01_自己紹介/02_プロフィール.md
+      - 簡易年表: 01_自己紹介/03_簡易年表.md
+  - 2. 私の特性:
+      - 02_私の特性/index.md
+      - 三本柱（生得的特性）: 02_私の特性/01_三本柱.md
+      - メイレズビアン: 02_私の特性/02_メイレズビアン.md
+      - 承認欲求がない構造: 02_私の特性/03_承認欲求がない構造.md
+      - HSP的感受性: 02_私の特性/04_HSP的感受性.md
+      - 4段階目薄人間: 02_私の特性/05_4段階目薄人間.md
+      - 派生的特性のマップ: 02_私の特性/06_派生的特性のマップ.md
+  - 3. 私の考え方:
+      - 03_私の考え方/index.md
+      - 価値観の体系: 03_私の考え方/01_価値観の体系.md
+      - 思考フレーム: 03_私の考え方/02_思考フレーム.md
+      - 世界観と人間観: 03_私の考え方/03_世界観と人間観.md
+      - 社会観: 03_私の考え方/04_社会観.md
+      - 創作論: 03_私の考え方/05_創作論.md
+      - AIとの関係: 03_私の考え方/06_AIとの関係.md
+  - 4. ライフヒストリー:
+      - 04_ライフヒストリー/index.md
+      - 0-15歳 素の対象駆動: 04_ライフヒストリー/01_0-15歳_素の対象駆動.md
+      - 15-24歳 社交装置の獲得: 04_ライフヒストリー/02_15-24歳_社交装置の獲得.md
+      - 24-27歳 慣性と崩壊: 04_ライフヒストリー/03_24-27歳_慣性と崩壊.md
+      - 28-37歳 社会との衝突と離脱: 04_ライフヒストリー/04_28-37歳_社会との衝突と離脱.md
+      - 37-47歳 コミュニティの試行と離脱: 04_ライフヒストリー/05_37-47歳_コミュニティの試行と離脱.md
+      - 47歳 自己理解への到達: 04_ライフヒストリー/06_47歳_自己理解への到達.md
+  - 5. 根拠とエピソード:
+      - 05_根拠とエピソード/index.md
+      - 主張と根拠のツリー: 05_根拠とエピソード/01_主張と根拠のツリー.md
+      - 身体的傍証: 05_根拠とエピソード/02_身体的傍証.md
+      - 認知的傍証: 05_根拠とエピソード/03_認知的傍証.md
+      - 対人関係の傍証: 05_根拠とエピソード/04_対人関係の傍証.md
+      - 承認欲求10項目検証: 05_根拠とエピソード/05_承認欲求10項目検証.md
+  - 6. 仮説と理論:
+      - 06_仮説と理論/index.md
+      - 配偶動機-地位獲得本能の連動仮説: 06_仮説と理論/01_配偶動機-地位獲得本能の連動仮説.md
+      - 9年×2サイクル仮説: 06_仮説と理論/02_9年2サイクル仮説.md
+      - 通貨レート違い仮説: 06_仮説と理論/03_通貨レート違い仮説.md
+      - 認知レイヤーと感情レイヤー仮説: 06_仮説と理論/04_認知レイヤーと感情レイヤー仮説.md
+      - 面白さの5仮説と飽きの3パターン: 06_仮説と理論/05_面白さの5仮説.md
+      - 整合性による真理性の感覚: 06_仮説と理論/06_整合性による真理性の感覚.md
+  - 7. 作品と趣味:
+      - 07_作品と趣味/index.md
+      - アニメ・漫画・小説の遍歴: 07_作品と趣味/01_アニメ漫画小説の遍歴.md
+      - 趣味の遍歴: 07_作品と趣味/02_趣味の遍歴.md
+      - 技術スタック: 07_作品と趣味/03_技術スタック.md
+      - ファンタジー創作プロジェクト: 07_作品と趣味/04_ファンタジー創作プロジェクト.md
+  - 8. 今とこれから:
+      - 08_今とこれから/index.md
+      - 現在の生活: 08_今とこれから/01_現在の生活.md
+      - 友人とコミュニティの位置: 08_今とこれから/02_友人とコミュニティ.md
+      - 自分専用生成システム: 08_今とこれから/03_自分専用生成システム.md
+      - 発信戦略（YouTube）: 08_今とこれから/04_発信戦略.md
+      - 残された問いと未踏領域: 08_今とこれから/05_残された問い.md
+  - タグ一覧: tags.md
+  - 日付別アーカイブ: archive.md

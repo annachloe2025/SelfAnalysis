@@ -1,0 +1,13 @@
+# Python packages required to build the SelfAnalysis MkDocs site.
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# Preview locally:
+#   python -m mkdocs serve
+#
+# Build static site:
+#   python -m mkdocs build
+
+mkdocs==1.6.1
+mkdocs-material==9.5.49
