@@ -31,13 +31,31 @@ if errorlevel 1 echo   (nothing to commit, or commit skipped)
 
 echo.
 echo [3/4] Pushing to GitHub ...
-git push
+
+REM Check if remote 'origin' exists, add it if not
+git remote get-url origin > nul 2>&1
 if errorlevel 1 (
-    echo.
-    echo   ERROR: git push failed. Check the messages above.
-    echo.
-    pause
-    exit /b 1
+    echo   Remote 'origin' not set. Adding ...
+    git remote add origin https://github.com/annachloe2025/SelfAnalysis.git
+)
+
+REM First try a normal push, fall back to --set-upstream on first push
+git push 2>nul
+if errorlevel 1 (
+    echo   No upstream set. Performing first push with --set-upstream origin main ...
+    git push --set-upstream origin main
+    if errorlevel 1 (
+        echo.
+        echo   ERROR: git push failed. Check the messages above.
+        echo   Common fixes:
+        echo     - Authenticate with GitHub (PAT or Git Credential Manager)
+        echo     - If remote already has commits:
+        echo         git pull origin main --allow-unrelated-histories
+        echo         then re-run this script.
+        echo.
+        pause
+        exit /b 1
+    )
 )
 
 echo.
