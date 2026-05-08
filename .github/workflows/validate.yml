@@ -1,0 +1,66 @@
+name: validate
+
+# このワークフローは、コードが GitHub に push されたときに
+# データ層の整合性検証と mkdocs ビルドを自動実行する。
+#
+# 失敗した場合、GitHub Actions タブで通知される。
+# 公開サイト（GitHub Pages）には deploy されないので、
+# 形式不正なコンテンツがそのまま公開される事故を防げる。
+#
+# 設計書：_design/05_オーケストレーション運用設計.md §2.6
+#         _design/07_運用ルール.md §13
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  validate-data:
+    name: データ層の整合性検証
+    runs-on: ubuntu-latest
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python のセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: 依存関係をインストール
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: validate_data.py を実行
+        run: python hooks/validate_data.py
+
+      - name: NG表現の最終検出（warning がエラー扱い）
+        run: python hooks/validate_data.py --strict
+        continue-on-error: true  # warning だけならビルドは通すが通知は出す
+
+  build-docs:
+    name: MkDocs ビルド検証
+    runs-on: ubuntu-latest
+    needs: validate-data
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python のセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: 依存関係をインストール
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: mkdocs build（リンク切れ検出）
+        run: python -m mkdocs build --strict

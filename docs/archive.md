@@ -4,19 +4,37 @@
 
 自己分析を始めてから現在までの全ページを、日付ごとに並べたものです。日付プレフィックス無しのページ（章本体など）は末尾にまとめています。
 
-現在のページ総数: **294件**
+現在のページ総数: **313件**
 
 ## 通し（日付なし）
 
 - **0000-00-00** [簡易年表](views/時系列/簡易年表.md) <small>（views）</small>
 - **0000-00-00** [私のスタンス](_legacy/私のスタンス.md) <small>（_legacy）</small>
+- **0000-00-00** [私と身体](views/関係別/私と身体.md) <small>（views）</small>
+- **0000-00-00** [私と社会](views/関係別/私と社会.md) <small>（views）</small>
+- **0000-00-00** [私と母](views/関係別/私と母.md) <small>（views）</small>
+- **0000-00-00** [私と他者](views/関係別/私と他者.md) <small>（views）</small>
+- **0000-00-00** [私とAI](views/関係別/私とAI.md) <small>（views）</small>
+- **0000-00-00** [社会観レンズ](views/主題別/社会観レンズ.md) <small>（views）</small>
+- **0000-00-00** [確信していること](views/信頼度別/確信していること.md) <small>（views）</small>
+- **0000-00-00** [用語集](views/抽象度別/用語集.md) <small>（views）</small>
 - **0000-00-00** [承認欲求レンズ](views/主題別/承認欲求レンズ.md) <small>（views）</small>
 - **0000-00-00** [承認欲求とは](_legacy/承認欲求とは.md) <small>（_legacy）</small>
 - **0000-00-00** [性同一性障害とは](_legacy/性同一性障害とは.md) <small>（_legacy）</small>
+- **0000-00-00** [性同一性から入る](views/入口別/性同一性から入る.md) <small>（views）</small>
+- **0000-00-00** [思想から入る](views/入口別/思想から入る.md) <small>（views）</small>
 - **0000-00-00** [履歴書ビュー](views/用途別/履歴書ビュー.md) <small>（views）</small>
 - **0000-00-00** [合理性駆動レンズ](views/主題別/合理性駆動レンズ.md) <small>（views）</small>
+- **0000-00-00** [創作・物語レンズ](views/主題別/創作・物語レンズ.md) <small>（views）</small>
+- **0000-00-00** [全仮説マップ](views/抽象度別/全仮説マップ.md) <small>（views）</small>
+- **0000-00-00** [全主張カタログ](views/抽象度別/全主張カタログ.md) <small>（views）</small>
 - **0000-00-00** [全エピソード索引](views/抽象度別/全エピソード索引.md) <small>（views）</small>
+- **0000-00-00** [価値観体系](views/抽象度別/価値観体系.md) <small>（views）</small>
+- **0000-00-00** [仮説の段階](views/信頼度別/仮説の段階.md) <small>（views）</small>
+- **0000-00-00** [ライフフェーズ別伝記](views/時系列/ライフフェーズ別伝記.md) <small>（views）</small>
 - **0000-00-00** [メイレズビアンレンズ](views/主題別/メイレズビアンレンズ.md) <small>（views）</small>
+- **0000-00-00** [ヒューマニズムレンズ](views/主題別/ヒューマニズムレンズ.md) <small>（views）</small>
+- **0000-00-00** [まだわからないこと](views/信頼度別/まだわからないこと.md) <small>（views）</small>
 - **0000-00-00** [VL-011_個人の自由](data/values/VL-011_個人の自由.md) <small>（data）</small>
 - **0000-00-00** [VL-010_物語への没入](data/values/VL-010_物語への没入.md) <small>（data）</small>
 - **0000-00-00** [VL-009_自己理解の継続](data/values/VL-009_自己理解の継続.md) <small>（data）</small>
@@ -276,6 +294,7 @@
 - **0000-00-00** [BP-003_白か黒、特に黒を好む](data/behaviors/BP-003_白か黒、特に黒を好む.md) <small>（data）</small>
 - **0000-00-00** [BP-002_女性主人公・女性視点の作品を一貫して選ぶ](data/behaviors/BP-002_女性主人公・女性視点の作品を一貫して選ぶ.md) <small>（data）</small>
 - **0000-00-00** [BP-001_格闘ゲームで一貫して女性キャラを選ぶ](data/behaviors/BP-001_格闘ゲームで一貫して女性キャラを選ぶ.md) <small>（data）</small>
+- **0000-00-00** [AI活用から入る](views/入口別/AI活用から入る.md) <small>（views）</small>
 - **0000-00-00** [AI引き継ぎビュー](views/用途別/AI引き継ぎビュー.md) <small>（views）</small>
 - **0000-00-00** [9年×2サイクル伝記](views/時系列/9年×2サイクル伝記.md) <small>（views）</small>
 - **0000-00-00** [06_派生的特性のマップ](_legacy/02_私の特性/06_派生的特性のマップ.md) <small>（_legacy）</small>
