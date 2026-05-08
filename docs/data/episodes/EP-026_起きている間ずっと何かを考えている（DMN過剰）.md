@@ -54,7 +54,7 @@ tags:
 
 ## 出典との関係
 
-旧 SelfAnalysis では `docs/エピソード/EP-026_*.md` として整備されていた。本 atom はそれを新スキーマに移植したもの（Phase 2）。本人レビューで `verification_status` を `本人確認済` に昇格予定。
+旧 SelfAnalysis では `docs/エピソード/EP-026_起きている間ずっと何かを考えている（DMN過剰）.md` として整備されていた。本 atom はそれを新スキーマに移植したもの（Phase 2）。本人レビューで `verification_status` を `本人確認済` に昇格予定。
 
 ## 注記（移植時）
 

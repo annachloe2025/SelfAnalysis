@@ -52,7 +52,7 @@ tags:
 
 ## 出典との関係
 
-旧 SelfAnalysis では `docs/エピソード/EP-018_*.md` として整備されていた。本 atom はそれを新スキーマに移植したもの（Phase 2）。本人レビューで `verification_status` を `本人確認済` に昇格予定。
+旧 SelfAnalysis では `docs/エピソード/EP-018_文字を読むのが少し遅いと感じていた、DNA検査で情報処理が遅い傾向と判明.md` として整備されていた。本 atom はそれを新スキーマに移植したもの（Phase 2）。本人レビューで `verification_status` を `本人確認済` に昇格予定。
 
 ## 注記（移植時）
 
