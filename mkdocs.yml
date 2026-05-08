@@ -115,20 +115,42 @@ nav:
           - HSPレンズ: views/主題別/HSPレンズ.md
           - 承認欲求レンズ: views/主題別/承認欲求レンズ.md
           - 合理性駆動レンズ: views/主題別/合理性駆動レンズ.md
+          - ヒューマニズムレンズ: views/主題別/ヒューマニズムレンズ.md
+          - 創作・物語レンズ: views/主題別/創作・物語レンズ.md
+          - 社会観レンズ: views/主題別/社会観レンズ.md
       - 時系列:
           - views/時系列/index.md
           - 9年×2サイクル伝記: views/時系列/9年×2サイクル伝記.md
+          - ライフフェーズ別伝記: views/時系列/ライフフェーズ別伝記.md
           - 簡易年表: views/時系列/簡易年表.md
       - 抽象度別:
           - views/抽象度別/index.md
           - 全エピソード索引: views/抽象度別/全エピソード索引.md
+          - 全主張カタログ: views/抽象度別/全主張カタログ.md
+          - 全仮説マップ: views/抽象度別/全仮説マップ.md
+          - 用語集: views/抽象度別/用語集.md
+          - 価値観体系: views/抽象度別/価値観体系.md
+      - 関係別:
+          - views/関係別/index.md
+          - 私と社会: views/関係別/私と社会.md
+          - 私と他者: views/関係別/私と他者.md
+          - 私と身体: views/関係別/私と身体.md
+          - 私と AI: views/関係別/私とAI.md
+          - 私と母: views/関係別/私と母.md
       - 用途別:
           - views/用途別/index.md
           - 履歴書ビュー: views/用途別/履歴書ビュー.md
           - AI引き継ぎビュー: views/用途別/AI引き継ぎビュー.md
-      - 関係別: views/関係別/index.md
-      - 信頼度別: views/信頼度別/index.md
-      - 入口別: views/入口別/index.md
+      - 信頼度別:
+          - views/信頼度別/index.md
+          - 確信していること: views/信頼度別/確信していること.md
+          - 仮説の段階: views/信頼度別/仮説の段階.md
+          - まだわからないこと: views/信頼度別/まだわからないこと.md
+      - 入口別:
+          - views/入口別/index.md
+          - 性同一性から入る: views/入口別/性同一性から入る.md
+          - 思想から入る: views/入口別/思想から入る.md
+          - AI活用から入る: views/入口別/AI活用から入る.md
   - データ層:
       - エピソード（EP）: data/episodes/index.md
       - 主張（CL）: data/claims/index.md
